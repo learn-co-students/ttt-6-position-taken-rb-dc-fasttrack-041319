@@ -1,3 +1,5 @@
+board = [" "," "," "," "," "," "," "," "," "]
+
 require_relative '../lib/position_taken.rb'
 
 describe '#position_taken? in lib/position_taken.rb' do
@@ -32,7 +34,7 @@ describe '#position_taken? in lib/position_taken.rb' do
     expect(position_taken?(board, index)).to be(false)
   end
 
-  it 'returns true if the board has a value of "X" or "O" in the index' do
+  it board =  do
     board = ["X", " ", " ", " ", " ", " ", " ", " ", "O"]
 
     index = 0
